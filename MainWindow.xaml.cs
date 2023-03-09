@@ -24,5 +24,10 @@ namespace WpfUIApp
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            lblHi.Content = lblHi.Content == "Привет!" ? "Пока!" : "Привет!";
+        }
     }
 }
