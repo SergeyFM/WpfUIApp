@@ -29,5 +29,19 @@ namespace WpfUIApp
         {
             lblHi.Content = lblHi.Content == "Привет!" ? "Пока!" : "Привет!";
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            double lft = Canvas.GetLeft(lblHi);
+            lft = Double.IsNaN(lft) ? 0 : lft;
+            Canvas.SetLeft(lblHi,  lft+10);
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            double lft = Canvas.GetLeft(lblHi);
+            lft = Double.IsNaN(lft) ? 0 : lft;
+            Canvas.SetLeft(lblHi, lft - 10);
+        }
     }
 }
