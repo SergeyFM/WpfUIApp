@@ -43,5 +43,10 @@ namespace WpfUIApp
             lft = Double.IsNaN(lft) ? 0 : lft;
             Canvas.SetLeft(lblHi, lft - 10);
         }
+
+        private void btnTime_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(DateTime.Now.ToString());
+        }
     }
 }
